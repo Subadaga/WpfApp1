@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfApp1.CongruencialMixto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="CongruencialMixto" Height="768" Width="1024">
+    <Grid>
+        <Button x:Name="RegresarButton" Content="Regresar" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Width="75" Click="RegresarButton_Click"/>
+        <Label Content="Método Congruencial Mixto" HorizontalAlignment="Left" Margin="210,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="LabelError" Content="Semilla" HorizontalAlignment="Left" Margin="37,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="SemillaInput" HorizontalAlignment="Left" Height="23" Margin="90,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Multiplicador" HorizontalAlignment="Left" Margin="235,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MultiplicadorInput" HorizontalAlignment="Left" Height="23" Margin="320,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <Label Content="Incremento" HorizontalAlignment="Left" Margin="440,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="IncrementoInput" HorizontalAlignment="Left" Height="23" Margin="515,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <Label Content="Modulo" HorizontalAlignment="Left" Margin="643,65,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ModuloInput" HorizontalAlignment="Left" Height="23" Margin="695,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <DataGrid x:Name="DataGridCongruencial" HorizontalAlignment="Left" Height="420" Margin="80,140,0,0" VerticalAlignment="Top" Width="640"/>
+        <Button x:Name="GenerarSecuencia" Content="Generar Secuencia" HorizontalAlignment="Left" Margin="80,105,0,0" VerticalAlignment="Top" Width="115" Click="GenerarSecuencia_Click"/>
+        <Label Content="Iteraciones" HorizontalAlignment="Left" Margin="817,65,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.418,0.577"/>
+        <TextBox x:Name="IteracionesInput" HorizontalAlignment="Left" Height="23" Margin="895,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <Label Content="Kolmogorov-Smirnov" HorizontalAlignment="Left" Margin="80,578,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <ComboBox x:Name="boxSignificancia" HorizontalAlignment="Left" Margin="210,623,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" Height="27">
+            <ComboBoxItem Content="0.01"/>
+            <ComboBoxItem Content="0.02"/>
+            <ComboBoxItem Content="0.05"/>
+            <ComboBoxItem Content="0.1"/>
+            <ComboBoxItem Content="0.15"/>
+            <ComboBoxItem Content="0.2"/>
+        </ComboBox>
+        <Label Content="Nivel de significancia" HorizontalAlignment="Left" Margin="80,620,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ResultadoKol" Content="" HorizontalAlignment="Left" Margin="87,659,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+    </Grid>
+</Window>
